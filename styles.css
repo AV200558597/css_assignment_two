@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root{
+    --dark: #181a1e;
+    --light: #fbfbfb;
+    --primary: #0a5eb3;
+    --light-primary: #CFE8FF;
+    --grey: #ccc;
+    --dark-grey: #363949;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier Prime", monospace;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--dark-grey);
+}
+
+header {
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    border-bottom: 2px solid var(--dark);
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary);
+    border-right: 2px solid var(--grey);
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes cursor{
+    0%, 100%{border-color: transparent;}
+    50%{border-color: var(--grey);}
+}
+@keyframes typing{
+    0%{ width: 0ch} /*Text is hidden*/
+    30%{ width: 16ch;} /*The enitre header will be typed out*/
+    80%{ width: 16ch;} /*Text stays visible*/
+    90%{ width: 0ch;} /*Text is deleted*/
+    100%{ width: 0ch;} /*Text stays hidden*/
+}
+/* Apply a general style to the entire body */
+main{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    margin: 24px;
+}
+p{
+    color: var(--light);
+    margin: 16px;
+    padding: 4px;
+}
+
+h2, h3 {
+    color: var(--light);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Add some animation to the chorus for emphasis */
+.chorus:hover {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    text-shadow: 0 0 1px rgba(10,94,179,1),
+                 0 0 10px rgba(32,140,248,0.59),
+                 0 0 20px rgba(0,203,255,0.71);
+    transition: text-shadow 0.3s ease;
+}
+
+/* Highlight specific words or phrases */
+.highlight:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fcff00,
+                 0 0 20px rgba(252,235,26,0.83),
+                 0 0 30px rgba(255,225,0,0.5);
+    transition: text-shadow 0.3s ease;
+}
+.highlight2:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255,125,0,1),
+                 0 0 20px rgba(255,175,0,0.8),
+                 0 0 30px rgba(255,225,0,0.5);
+    transition: text-shadow 0.3s ease;
+}
+.highlight3:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(2,186,3,1),
+                 0 0 20px rgba(0,255,47,0.8),
+                 0 0 30px rgba(83,255,0,0.5);
+    transition: text-shadow 0.3s ease;
+}
+  
+footer small {
+    color: var(--light);
+}
+
+footer small a{
+    color: var(--light);
+    text-decoration: none;
+}
+footer small a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+  
+  
+  
+  
